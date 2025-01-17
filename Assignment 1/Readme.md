@@ -91,3 +91,43 @@
 23. You can confirm the server is not up by checking the status in the Overview tab.
 
 ![](Images/img23.JPG)
+
+---
+
+## Connect with PuTTY
+
+1. Restart the server VM.
+
+![](Images/img24.JPG)
+
+2. Install the Putty Software and open puTTYgen
+
+![](Images/img25.JPG)
+
+3. Load the key (.pem) file to the puTTYgen
+
+![](Images/img26.JPG)
+
+4. Save the private key, so we can use the generated PuTTY key, now close PuTTYgen and open PuTTY.
+
+![](Images/img27.JPG)
+
+5. Copy the public IP from the VM and save it in PuTTY.
+
+![](Images/img28.JPG)
+
+6. Select the key under Connection => SSH => Auth => Credentials => Private key file for authentication
+
+![](Images/img29.JPG)
+
+7. Now press open to open the terminal window
+
+![](Images/img30.JPG)
+
+8. Now give the username that you gave in the VM and press Enter. Now you are in...
+
+![](Images/img31.JPG)
+
+9. You can shut down the VM by the same way did in terminal.
+
+![](Images/img32.JPG)
