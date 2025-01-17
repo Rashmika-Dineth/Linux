@@ -60,6 +60,30 @@
 
 ![](Images/img15.JPG)
 
-16. In Navigation select Connect => Connect to set up DNS name,
+16. Press configure and set the DNS name,
+
+![](Images/img21.JPG)
+
+17. In Navigation select Connect => Connect to set up network,
 
 ![](Images/img16.JPG)
+
+18. You can select the Most common **"Native SSH"** method,
+
+![](Images/img17.JPG)
+
+19. First copy the path of the key file Ex: "C:\Users\rashm\Documents\Keys\linux-lab_key_0117.pem". You can do this by **Shift+ right mouse click on the key file => copy as path**. Then paste it in option 3 and Copy and execute SSH command. **ssh -i "C:\Users\rashm\Documents\Keys\linux-lab_key_0117.pem" azuredineth@74.234.40.225**
+
+![](Images/img18.JPG)
+
+20. Open the cmd and enter the above value,
+
+![](Images/img19.JPG)
+
+21. Enter yes for question "Are you sure you want to continue connecting?" Then it will connect to the Azure VM in local.
+
+![](Images/img20.JPG)
+
+22. You can shutdown the VM by command, "sudo shutdown now"
+
+![](Images/img22.JPG)
