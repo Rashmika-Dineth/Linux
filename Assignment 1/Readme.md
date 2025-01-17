@@ -87,3 +87,7 @@
 22. You can shutdown the VM by command, "sudo shutdown now"
 
 ![](Images/img22.JPG)
+
+23. You can confirm the server is not up by checking the status in the Overview tab.
+
+![](Images/img23.JPG)
