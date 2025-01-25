@@ -39,7 +39,7 @@ So the listing is as below,
 
 ## Appendix
 
-azuredineth@linux-lab:~$ pwd
+`azuredineth@linux-lab:~$ pwd
 /home/azuredineth
 azuredineth@linux-lab:~$ ls
 mytext.txt pipes.txt
@@ -125,4 +125,4 @@ azuredineth@linux-lab:/etc/apparmor$ cd ..
 azuredineth@linux-lab:/etc$ cd apport
 azuredineth@linux-lab:/etc/apport$ ls
 crashdb.conf report-ignore
-azuredineth@linux-lab:/etc/apport$
+azuredineth@linux-lab:/etc/apport$`
