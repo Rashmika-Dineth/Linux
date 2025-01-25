@@ -8,7 +8,7 @@
 
 ![](Images/2.png)
 
-So the listing is as below,
+So the listing is as below, [listing.md](https://github.com/Rashmika-Dineth/Linux/blob/main/Assignment%202/listing.md)
 
 1. /etc/ModemManager/
 
@@ -39,7 +39,7 @@ So the listing is as below,
 
 ## Appendix
 
-`azuredineth@linux-lab:~$ pwd
+> `azuredineth@linux-lab:~$ pwd
 /home/azuredineth
 azuredineth@linux-lab:~$ ls
 mytext.txt pipes.txt
