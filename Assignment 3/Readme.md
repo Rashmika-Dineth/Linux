@@ -14,6 +14,6 @@
 
 sudo adduser dineth
 
-![](image.png)
+![](Images/1.png)
 
 2.
