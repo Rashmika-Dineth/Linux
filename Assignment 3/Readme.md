@@ -74,3 +74,36 @@ lupu ALL=(ALL:ALL) ALL
    This wont be instructed. Idea is to create a group of users, assign this group to owner of folder and files.
    To ensure that the permission structure is maintained for newly created files and folders, we should set up a common group and use the setgid bit on the directory.
    Idea is that any files or directories created within /opt/projekti will automatically inherit the projekti group ownership, maintaining the desired permission structure.
+
+- Create a directory /opt/projekti
+
+![](Images/6.png)
+
+- Create a Group call projekti
+
+![](Images/7.png)
+
+- Add Users tupu and lupu to the Group
+
+![](Images/8.png)
+
+- Assign the Group Ownership to /opt/projekti
+
+![](Images/9.png)
+
+- Set Permissions to Allow Only tupu and lupu Access
+
+![](Images/10.png)
+
+- Check the permissions
+
+![](Images/11.png)
+
+---
+
+- 2 → Enables the setgid bit (ensures new files inherit the projekti group).
+- 7 → Full access (read, write, execute) for the owner (root).
+- 7 → Full access (read, write, execute) for the group (projekti).
+- 0 → No access for others (prevents unauthorized users from listing, reading, or modifying files).
+
+---
