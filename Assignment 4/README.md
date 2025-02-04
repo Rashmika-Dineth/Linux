@@ -2,14 +2,18 @@
 
 ## Author - Rashmika Dineth Ruwanpathirana - BEIRP24A6
 
-## Content
+---
+
+## Part 1: Markdown exercise
+
+### Content
 
 - Introduction to Markdown
 - Markdown syntax basics
 - Introduction to Linux
 - Basic commands
 
-### Markdown examples
+#### Markdown examples
 
 - **This is a Bold text**
 - _This is a italic text_
@@ -27,4 +31,27 @@ This is a Sample Image
 
 ![Boy Using Linux](./Images/image1.jpg)
 
-<img src="./Images/image1.jpg" alt="Alt text" width="300" height="200">
+---
+
+## Part 2: Linux Exercise
+
+1. Open a Linux command prompt (terminal).
+
+2. Create a new directory named markdown_linux_assignment with the command:
+
+- mkdir markdown_linux_harjoitus
+- Go to the created directory with the command: cd markdown_linux_assingment
+
+3. Create a new empty file named README.md with the command:
+
+- touch README.md
+
+4. Check that the file was created successfully with the command:
+
+- ll
+
+5. Open README.md file in a text editor, for example, using a nano editor:
+
+- nano README.md
+
+6. Add the existing Markdown content to the file and save the changes.
