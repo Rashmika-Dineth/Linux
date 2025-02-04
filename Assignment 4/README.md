@@ -4,7 +4,11 @@
 
 ## Content
 
-- Introduction to Markdown
-- Markdown syntax basics
-- Introduction to Linux
-- Basic commands
+    - Introduction to Markdown
+    - Markdown syntax basics
+    - Introduction to Linux
+    - Basic commands
+
+### Markdown examples
+
+    - **This is a Bold text**
