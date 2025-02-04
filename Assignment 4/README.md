@@ -16,15 +16,15 @@
 - [Assignment 4 - Link](https://github.com/Rashmika-Dineth/Linux/tree/main/Assignment%204)
 - `This can be a code block `
 
-| ----------- | ----------- |
-| No | Description |
-| ----------- | ----------- |
-| 1 | Title |
-| 2 | Text |
-| 3 | Text |
-| 4 | Text |
-| ----------- | ----------- |
+| No  | Description |
+| --- | ----------- |
+| 1   | Title       |
+| 2   | Text        |
+| 3   | Text        |
+| 4   | Text        |
 
 This is a Sample Image
 
 ![Boy Using Linux](./Images/image1.jpg)
+
+<img src="./Images/image1.jpg" alt="Alt text" width="300" height="200">
