@@ -146,3 +146,7 @@ awk '{if($1 > max) {max=$1; line=$0}} END {print "Max=" max ", at " substr(line,
 ```
 
 ![](./Images/9.png)
+
+- output of command "echo your_name"
+
+![](./Images/10.png)
