@@ -13,7 +13,9 @@
 
 1. First we need to identify the current size of the directory size. for this we can use
 
-`du -s $HOME`
+```
+du -s $HOME
+```
 
 - du (Disk Usage) – Estimates file space usage.
 - -s (Summary) – Provides only the total size of the specified directory instead of listing each subdirectory.
@@ -23,7 +25,9 @@
 
 2. Next we need to print the date in the format `Jan 31 13:26:11 EET 2025`,
 
-`date '+%b %d %H:%M:%S %Z %Y'`
+```
+date '+%b %d %H:%M:%S %Z %Y'
+```
 
 - %b → Abbreviated month name (e.g., Feb for February).
 - %d → Day of the month (e.g., 10 for the 10th day).
