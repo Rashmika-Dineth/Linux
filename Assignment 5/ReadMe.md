@@ -13,4 +13,4 @@
 
 1. First we need to identify the current size of the directory size. for this we can use
 
-<tab><tab> du -s $HOME
+`du -s $HOME`
