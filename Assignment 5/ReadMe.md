@@ -10,3 +10,7 @@
 
 - now write a command using awk-tool (manual) to find a line containing maximum size from "discspace.txt" and print it. Example output:
 - - Max=3596, at Jan 31 13:26:11 EET 2025
+
+1. First we need to identify the current size of the directory size. for this we can use
+
+<tab><tab> du -s $HOME
