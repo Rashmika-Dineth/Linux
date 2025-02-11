@@ -36,10 +36,10 @@ Perform the following tasks step by step, documenting your commands and outputs.
 
 **This will check with the current installed versions and the latest stable versions that you can download**
 
-- Get the latest package information
-- Check whats need to be updated
-- Get the security and bug fixes paches
-- Update packages without dependancy issues
+    - Get the latest package information
+    - Check whats need to be updated
+    - Get the security and bug fixes paches
+    - Update packages without dependancy issues
 
 3. Upgrade installed packages:
 
@@ -50,9 +50,9 @@ Perform the following tasks step by step, documenting your commands and outputs.
 
 - What is the difference between update and upgrade?
 
-- - upgrade: This will update the packages in the linux system.
+  - upgrade: This will update the packages in the linux system.
 
-- - update: This will list down the updatable packages in the system without updating them.
+  - update: This will list down the updatable packages in the system without updating them.
 
 4. View pending updates (if any):
 
