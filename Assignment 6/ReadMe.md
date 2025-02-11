@@ -23,23 +23,44 @@ Perform the following tasks step by step, documenting your commands and outputs.
 
 - Record the output.
 
+![](./Images/1.png)
+
 2. Update the package list:
 
 - Run the command:
   sudo apt update
+
+![](./Images/2.png)
+
 - Explain why this step is important.
+
+**This will check with the current installed versions and the latest stable versions that you can download**
+
+- Get the latest package information
+- Check whats need to be updated
+- Get the security and bug fixes paches
+- Update packages without dependancy issues
 
 3. Upgrade installed packages:
 
 - Run:
   sudo apt upgrade -y
+
+![](./Images/3.png)
+
 - What is the difference between update and upgrade?
+
+- upgrade: This will update the packages in the linux system.
+
+- update: This will list down the updatable packages in the system without updating them.
 
 4. View pending updates (if any):
 
 - Run:
   apt list --upgradable
 - Take note of any pending updates.
+
+![](./Images/4.png)
 
 ---
 
@@ -49,7 +70,13 @@ Perform the following tasks step by step, documenting your commands and outputs.
 
 - Find an image editor using:
   apt search image editor
+
+![](./Images/5.png)
+
 - Pick one package from the list and write down its name.
+
+xpaint/noble 2.9.1.4-4.1build2 amd64
+simple paint program for X
 
 6. View package details:
 
@@ -121,6 +148,8 @@ Perform the following tasks step by step, documenting your commands and outputs.
 - What error message do you get?
 - How would you troubleshoot this issue?
 
+---
+
 ## Submission Requirements
 
 - A markdown document containing:
@@ -128,6 +157,8 @@ Perform the following tasks step by step, documenting your commands and outputs.
 - Screenshots (if possible) of important outputs.
 - Answers to the questions provided in each step.
 - Submit your work via GitHub repository URL.
+
+---
 
 ## Bonus Challenge (Optional):
 
