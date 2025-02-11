@@ -50,9 +50,9 @@ Perform the following tasks step by step, documenting your commands and outputs.
 
 - What is the difference between update and upgrade?
 
-- upgrade: This will update the packages in the linux system.
+- - upgrade: This will update the packages in the linux system.
 
-- update: This will list down the updatable packages in the system without updating them.
+- - update: This will list down the updatable packages in the system without updating them.
 
 4. View pending updates (if any):
 
