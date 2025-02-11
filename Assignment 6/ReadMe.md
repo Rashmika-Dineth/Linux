@@ -3,9 +3,10 @@
 ### Objective:
 
 By completing this assignment, you will:
-✅ Learn how to install, update, remove, and search for software using APT (Advanced Package Tool).
-✅ Understand how to manage repositories and resolve package dependencies.
-✅ Gain hands-on experience in troubleshooting package installation issues.
+
+- ✅ Learn how to install, update, remove, and search for software using APT (Advanced Package Tool).
+- ✅ Understand how to manage repositories and resolve package dependencies.
+- ✅ Gain hands-on experience in troubleshooting package installation issues.
 
 ## Instructions
 
