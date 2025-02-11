@@ -1,4 +1,4 @@
-# Assingment 6 - APT
+# Assignment 6 - APT
 
 ### Objective:
 
@@ -38,8 +38,8 @@ Perform the following tasks step by step, documenting your commands and outputs.
 
     - Get the latest package information
     - Check whats need to be updated
-    - Get the security and bug fixes paches
-    - Update packages without dependancy issues
+    - Get the security and bug fixes patches
+    - Update packages without dependency issues
 
 3. Upgrade installed packages:
 
@@ -171,7 +171,7 @@ Package Name : xpaint - xpaint/noble 2.9.1.4-4.1build2 amd64 - simple paint prog
 
 - What do you notice in this file?
 
-  - This file contains the list of the dep file swhich is binary package repository (for installing software). So we can update this file so we can install the nessasary file packages along-side with ubuntu.
+  - This file contains the list of the dep file swhich is binary package repository (for installing software). So we can update this file so we can install the necessary file packages along-side with ubuntu.
 
 ![](./Images/17.png)
 
@@ -195,7 +195,7 @@ Package Name : xpaint - xpaint/noble 2.9.1.4-4.1build2 amd64 - simple paint prog
 
 ![](./Images/19.png)
 
-    - 1. To trobuleshoot this error first we need to identify there are no any word mistypings.
+    - 1. To troubleshoot this error first we need to identify there are no any word mistypings.
     - 2. Search the package using `apt search fakepackage` it will not display a list of similar packages if the package is incorrect.
 
 ![](./Images/20.png)
@@ -223,5 +223,5 @@ Package Name : xpaint - xpaint/noble 2.9.1.4-4.1build2 amd64 - simple paint prog
 - Why would you want to hold a package?
 
   - You can hold a package if you want to keep the same version during the updates.
-  - Sometimes updating a package might affect other installed packages on the system such as dependancy issues.
+  - Sometimes updating a package might affect other installed packages on the system such as dependency issues.
   - Some features might change / removed in the newer versions.
