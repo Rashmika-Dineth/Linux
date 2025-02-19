@@ -110,3 +110,55 @@ $lxc launch ubuntu:24.04 demo-container
 $ lxc exec demo-container -- bash
 
 ![](./Images/21.png)
+
+### Installing and managing Docker engine based system
+
+#### Basic steps:
+
+Follow good instructions from Docker, at https://docs.docker.com/
+
+![](./Images/22.png)
+
+More specifically from Ubuntu engine install instructions for Ubuntu system, and using convenience script:
+
+https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+sudo sh get-docker.sh
+
+Executing docker install script, commit: 7cae5f8b0decc17d6571f9f52eb840fbc13b2737
+
+<...>
+
+![](./Images/23.png)
+
+post installation guide tells us to make user part of Docker group on Linux machine:
+
+sudo groupadd docker
+
+sudo usermod -aG docker $USER
+
+newgrp docker
+
+![](./Images/24.png)
+
+check docker version
+
+![](./Images/25.png)
+
+#### Run Nginx on docker:
+
+1. Get the latest Nginx
+
+![](./Images/26.png)
+
+2. Start docker nginx image
+   - docker run -p 80:80 nginx
+   - docker run -d -p 80:80 nginx (To run on background use -d tag)
+
+![](./Images/27.png)
+
+3. If we open the IP of our virtual machine we can see Nginx is running,
+
+![](./Images/28.png)
