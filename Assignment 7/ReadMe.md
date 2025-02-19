@@ -42,3 +42,71 @@ aes – Applications performing encryption and decryption using the Advanced Enc
 2. sudo kvm-ok
 
 ![](./Images/7.png)
+
+### Installing and managing LXD / LXC system
+
+1. update your system by using apt: apt update && apt upgrade -y
+
+![](./Images/8.png)
+![](./Images/9.png)
+![](./Images/10.png)
+
+2. check if you just updated your kernel or other systems needing a complete system reboot, and if so, reboot: sudo reboot
+
+![](./Images/11.png)
+
+3. Install Snap: sudo apt install snap -y
+
+![](./Images/12.png)
+
+4. install lxd using snap: sudo snap install lxd
+
+![](./Images/13.png)
+
+5. check lxd version and installation: lxd --version
+
+![](./Images/14.png)
+
+6. check that your user belongs to LXD group: id, and look for LXD. If you do not find lxd group, add user to it: sudo usermod -aG lxd $USER
+
+![](./Images/15.png)
+
+7. check lxc system for listing of machines and containers: lxc list
+
+![](./Images/16.png)
+
+8. initialize xld, to configure system to your environment: lxd init. Make sure you run this as basic user, without root / sudo privileges it will ask series of questions, so based on your requirement answer them.
+
+   - When it asks about clustering, choose ‘no’ (unless you’re setting up a cluster)
+   - For storage, I recommend saying ‘yes’ to a new storage pool
+   - The ‘dir’ backend is fine for beginners
+   - Say ‘yes’ to a network bridge
+   - Choose ‘no’ to make LXD sever available over the network.
+
+![](./Images/17.png)
+
+9. Once lxd is initialized successfully, we can verify the information using following set of commands:
+
+$lxc profile list
+$lxc network list
+$lxc storage list
+
+![](./Images/18.png)
+
+10. In order to list all available images, run:
+
+$lxc image list images:
+
+![](./Images/19.png)
+
+11. Create your first container:
+
+$lxc launch ubuntu:24.04 demo-container
+
+![](./Images/20.png)
+
+12. Access the console of container. Run:
+
+$ lxc exec demo-container -- bash
+
+![](./Images/21.png)
