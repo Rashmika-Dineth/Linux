@@ -162,3 +162,43 @@ check docker version
 3. If we open the IP of our virtual machine we can see Nginx is running,
 
 ![](./Images/28.png)
+
+---
+
+## Linux Virtualization Exercise
+
+All exercises should be attempted on new Ubuntu 24.04 Linux installation, that supports nested virtualization.
+
+### Part 1: Introduction to virtualization concepts (30 minutes)
+
+Research: Using sources (Sources linked at the end of the task), learn about the following concepts:
+
+##### Virtualization
+
+​Virtualization is a technology that allows multiple operating systems or applications to run concurrently on a single physical machine by abstracting the underlying hardware resources. This is achieved through the use of hypervisors, which are software layers that create and manage virtual machines (VMs).​
+
+##### Hypervisor
+
+A hypervisor is software or firmware that creates and manages virtual machines (VMs) on a physical host. It allows multiple VMs to run on a single physical machine by abstracting and allocating hardware resources like CPU, memory, and storage.
+
+##### Virtual machines (VM)
+
+A virtual machine (VM) is a software-based emulation of a physical computer that runs an operating system (OS) and applications just like a real machine. VMs are created and managed by a hypervisor, which allocates CPU, memory, storage, and other resources from the physical hardware to the VM.
+
+##### Containers
+
+A container is a lightweight, portable software unit that packages an application and its dependencies together so it can run consistently across different environments. Unlike virtual machines (VMs), containers share the host operating system’s kernel, making them more efficient and faster.
+
+##### The main differences between VMs and tanks
+
+##### Summary: Summary in a text file briefly summarize the core differences between VMs and containers. Focus on their architecture, resource utilization, and insulation levels.
+
+| Feature Virtual | Machines (VMs)                                                        | Containers                                                         |
+| --------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Architecture    | Each VM has a full OS, including a guest OS and virtualized hardware. | Containers share the host OS kernel and run as isolated processes. |
+| Resource Usage  | More resource-intensive due to separate OS instances.                 | Lightweight, as they share the OS kernel.                          |
+| Startup Time    | Slower, since the OS needs to boot.                                   | Faster, since they don’t require OS booting.                       |
+| Isolation       | Stronger isolation (separate OS for each VM).                         | Weaker isolation (process-level separation).                       |
+| Portability     | Less portable, depends on the hypervisor.                             | Highly portable across different environments.                     |
+| Scalability     | Requires more resources to scale.                                     | Easily scalable due to lightweight nature.                         |
+| Use Case        | Best for running multiple OS environments or legacy applications.     | Best for microservices, cloud applications, and fast deployments.  |
