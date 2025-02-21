@@ -202,3 +202,104 @@ A container is a lightweight, portable software unit that packages an applicatio
 | Portability     | Less portable, depends on the hypervisor.                             | Highly portable across different environments.                     |
 | Scalability     | Requires more resources to scale.                                     | Easily scalable due to lightweight nature.                         |
 | Use Case        | Best for running multiple OS environments or legacy applications.     | Best for microservices, cloud applications, and fast deployments.  |
+
+---
+
+### Part 2: Working with Multipass (1-2 hours)
+
+Multipass is a command-line tool that allows you to quickly create and manage Ubuntu virtual machines.
+
+##### Installation: Follow the instructions on the Multipass website to install Multipass on your system. More information can be found in the source.
+
+1. Start VM and install Multipass.
+
+`sudo snap install multipass`
+
+2. Verify the installation
+
+`multipass version`
+
+![](./Images/Multipass/1.png)
+
+##### Basic commands: Use the multipass command-line interface and practice the following:
+
+1. ##### multipass boot: Launch the default Ubuntu instance.
+
+`multipass launch --name my-instance`
+
+`multipass launch --name multi-VM` (Name of the instance is multi-VM)
+
+![](./Images/Multipass/2.png)
+
+2. ##### multipass list: Lists all running instances.
+
+`multipass list`
+
+![](./Images/Multipass/3.png)
+
+3. ##### multipass info: View details about a specific instance.
+
+![](./Images/Multipass/4.png)
+
+4. ##### multipass shell: Access to the shell of a running instance.
+
+![](./Images/Multipass/5.png)
+
+5. ##### multipass exec: Run the command on the instance.
+
+![](./Images/Multipass/6.png)
+
+6. ##### multipass stop: Stop the running instance.
+
+![](./Images/Multipass/7.png)
+
+7. ##### multipass delete: Delete the instance.
+
+![](./Images/Multipass/8.png)
+
+##### Cloud-init:Study: Learn about cloud-initi and how it can be used to configure virtual machines
+
+##### Experiment: Create a cloud-init configuration file to customize the installation of a new instance.
+
+- For example, you can install specific packages or assign users.
+- Start a new instance of Multipass using this configuration.
+
+![](./Images/Multipass/9.png)
+
+![](./Images/Multipass/10.png)
+
+![](./Images/Multipass/11.png)
+
+![](./Images/Multipass/12.png)
+
+##### File sharing: Find out: Explore how to share files and folders between your host computer and Multipass instances
+
+1. Create a shared folder on your Linux VM
+
+![](./Images/Multipass/13.png)
+
+2. Mount the folder inside the Multipass instance
+
+![](./Images/Multipass/14.png)
+
+3. Check the shared folder inside the instance
+
+![](./Images/Multipass/15.png)
+
+##### Policy: Create a shared folder and access it from both your host and your Multipass instance.
+
+1. Create sample.txt file inside VM and check availability inside custom-instance VM,
+
+![](./Images/Multipass/16.png)
+
+---
+
+### Part 3: Exploring LXD (1 hour)
+
+LXD is another container and virtual machine management built on LXC, the so-called "Virtual Machine Management" of the Linux container. Runtime.
+
+Study: Read about LXD and its features on LinuxContainers website
+Setup: Install LXD on your system, enable LXD
+Basic commands: Experiment with basic LXD commands to create, manage, and interact with containers. You can find the starting point in the source
+
+1. Install LXD
