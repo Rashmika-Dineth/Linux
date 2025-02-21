@@ -374,3 +374,5 @@ Snapcraft is a tool and ecosystem that helps developers package their applicatio
 ![](./Images/Snap/9.png)
 
 3. Build template
+
+![](./Images/Snap/10.png)
