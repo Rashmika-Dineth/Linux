@@ -315,3 +315,62 @@ check docker version
 ![](./Images/28.png)
 
 ---
+
+### Part 5: Snaps for Self-Contained Applications (30 minutes)
+
+Snaps provides a way to package applications with their dependencies for consistent execution on Linux distributions.
+
+- Research: Using sources, explore Snapcraft and the concept of Snaps.
+
+- Experiment: Choose a simple app and compress it into Snap using Snapcraft. For more information, you can find "Snapcraft" - from the source.
+
+Snapcraft is a tool and ecosystem that helps developers package their applications into snaps, which are self-contained software packages that include the application and all of its dependencies. This makes it easy to distribute and run applications across different Linux distributions without worrying about compatibility issues or missing dependencies. Snaps are designed to work on most modern Linux distributions, and they are confined, meaning they run in isolated environments to ensure security.
+
+---
+
+1. Install snapcraft
+
+`sudo apt update`
+`sudo apt install snapcraft`
+
+![](./Images/Snap/1.png)
+
+2. Create the python file
+
+![](./Images/Snap/2.png)
+
+3. Create the Snapcraft Configuration
+
+![](./Images/Snap/3.png)
+
+4. Fix the error by adding `base: core20`
+
+5. Create the snapcraft
+
+![](./Images/Snap/4.png)
+
+6. Remove python-version to fix the error,
+
+![](./Images/Snap/5.png)
+
+![](./Images/Snap/6.png)
+
+7. Check for the file hello-world and create the missing file. Re run the snap
+
+![](./Images/Snap/7.png)
+
+---
+
+#### Method 2
+
+1. Build snap ENV.
+
+`sudo snap install lxd`
+
+![](./Images/Snap/8.png)
+
+2. Create YAML template
+
+![](./Images/Snap/9.png)
+
+3. Build template
