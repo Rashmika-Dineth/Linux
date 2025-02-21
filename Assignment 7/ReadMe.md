@@ -43,126 +43,6 @@ aes – Applications performing encryption and decryption using the Advanced Enc
 
 ![](./Images/7.png)
 
-### Installing and managing LXD / LXC system
-
-1. update your system by using apt: apt update && apt upgrade -y
-
-![](./Images/8.png)
-![](./Images/9.png)
-![](./Images/10.png)
-
-2. check if you just updated your kernel or other systems needing a complete system reboot, and if so, reboot: sudo reboot
-
-![](./Images/11.png)
-
-3. Install Snap: sudo apt install snap -y
-
-![](./Images/12.png)
-
-4. install lxd using snap: sudo snap install lxd
-
-![](./Images/13.png)
-
-5. check lxd version and installation: lxd --version
-
-![](./Images/14.png)
-
-6. check that your user belongs to LXD group: id, and look for LXD. If you do not find lxd group, add user to it: sudo usermod -aG lxd $USER
-
-![](./Images/15.png)
-
-7. check lxc system for listing of machines and containers: lxc list
-
-![](./Images/16.png)
-
-8. initialize xld, to configure system to your environment: lxd init. Make sure you run this as basic user, without root / sudo privileges it will ask series of questions, so based on your requirement answer them.
-
-   - When it asks about clustering, choose ‘no’ (unless you’re setting up a cluster)
-   - For storage, I recommend saying ‘yes’ to a new storage pool
-   - The ‘dir’ backend is fine for beginners
-   - Say ‘yes’ to a network bridge
-   - Choose ‘no’ to make LXD sever available over the network.
-
-![](./Images/17.png)
-
-9. Once lxd is initialized successfully, we can verify the information using following set of commands:
-
-$lxc profile list
-$lxc network list
-$lxc storage list
-
-![](./Images/18.png)
-
-10. In order to list all available images, run:
-
-$lxc image list images:
-
-![](./Images/19.png)
-
-11. Create your first container:
-
-$lxc launch ubuntu:24.04 demo-container
-
-![](./Images/20.png)
-
-12. Access the console of container. Run:
-
-$ lxc exec demo-container -- bash
-
-![](./Images/21.png)
-
-### Installing and managing Docker engine based system
-
-#### Basic steps:
-
-Follow good instructions from Docker, at https://docs.docker.com/
-
-![](./Images/22.png)
-
-More specifically from Ubuntu engine install instructions for Ubuntu system, and using convenience script:
-
-https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script
-
-curl -fsSL https://get.docker.com -o get-docker.sh
-
-sudo sh get-docker.sh
-
-Executing docker install script, commit: 7cae5f8b0decc17d6571f9f52eb840fbc13b2737
-
-<...>
-
-![](./Images/23.png)
-
-post installation guide tells us to make user part of Docker group on Linux machine:
-
-sudo groupadd docker
-
-sudo usermod -aG docker $USER
-
-newgrp docker
-
-![](./Images/24.png)
-
-check docker version
-
-![](./Images/25.png)
-
-#### Run Nginx on docker:
-
-1. Get the latest Nginx
-
-![](./Images/26.png)
-
-2. Start docker nginx image
-   - docker run -p 80:80 nginx
-   - docker run -d -p 80:80 nginx (To run on background use -d tag)
-
-![](./Images/27.png)
-
-3. If we open the IP of our virtual machine we can see Nginx is running,
-
-![](./Images/28.png)
-
 ---
 
 ## Linux Virtualization Exercise
@@ -302,6 +182,136 @@ Study: Read about LXD and its features on LinuxContainers website
 Setup: Install LXD on your system, enable LXD
 Basic commands: Experiment with basic LXD commands to create, manage, and interact with containers. You can find the starting point in the source
 
-**This part was discussed in the top of the documentation**
+### Installing and managing LXD / LXC system
+
+1. update your system by using apt: apt update && apt upgrade -y
+
+![](./Images/8.png)
+![](./Images/9.png)
+![](./Images/10.png)
+
+2. check if you just updated your kernel or other systems needing a complete system reboot, and if so, reboot: sudo reboot
+
+![](./Images/11.png)
+
+3. Install Snap: sudo apt install snap -y
+
+![](./Images/12.png)
+
+4. install lxd using snap: sudo snap install lxd
+
+![](./Images/13.png)
+
+5. check lxd version and installation: lxd --version
+
+![](./Images/14.png)
+
+6. check that your user belongs to LXD group: id, and look for LXD. If you do not find lxd group, add user to it: sudo usermod -aG lxd $USER
+
+![](./Images/15.png)
+
+7. check lxc system for listing of machines and containers: lxc list
+
+![](./Images/16.png)
+
+8. initialize xld, to configure system to your environment: lxd init. Make sure you run this as basic user, without root / sudo privileges it will ask series of questions, so based on your requirement answer them.
+
+   - When it asks about clustering, choose ‘no’ (unless you’re setting up a cluster)
+   - For storage, I recommend saying ‘yes’ to a new storage pool
+   - The ‘dir’ backend is fine for beginners
+   - Say ‘yes’ to a network bridge
+   - Choose ‘no’ to make LXD sever available over the network.
+
+![](./Images/17.png)
+
+9. Once lxd is initialized successfully, we can verify the information using following set of commands:
+
+$lxc profile list
+$lxc network list
+$lxc storage list
+
+![](./Images/18.png)
+
+10. In order to list all available images, run:
+
+$lxc image list images:
+
+![](./Images/19.png)
+
+11. Create your first container:
+
+$lxc launch ubuntu:24.04 demo-container
+
+![](./Images/20.png)
+
+12. Access the console of container. Run:
+
+$ lxc exec demo-container -- bash
+
+![](./Images/21.png)
+
+---
+
+### Part 4: How to Stick Apps with Docker (1 hour)
+
+Docker is a platform for building, deploying and managing container applications
+
+Installation: Install Docker Desktop on your system if you want to familiarize yourself with this section, You can find installation information for Docker Engine in the sources.
+
+Basic concepts: Research: Explore core Docker concepts such as images, containers, and Dockerfiles. Source.
+
+Experiment: Follow the "Docker Workshop" to get hands-on experience with Docker.
+
+### Installing and managing Docker engine based system
+
+#### Basic steps:
+
+Follow good instructions from Docker, at https://docs.docker.com/
+
+![](./Images/22.png)
+
+More specifically from Ubuntu engine install instructions for Ubuntu system, and using convenience script:
+
+https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+sudo sh get-docker.sh
+
+Executing docker install script, commit: 7cae5f8b0decc17d6571f9f52eb840fbc13b2737
+
+<...>
+
+![](./Images/23.png)
+
+post installation guide tells us to make user part of Docker group on Linux machine:
+
+sudo groupadd docker
+
+sudo usermod -aG docker $USER
+
+newgrp docker
+
+![](./Images/24.png)
+
+check docker version
+
+![](./Images/25.png)
+
+#### Run Nginx on docker:
+
+1. Get the latest Nginx
+
+![](./Images/26.png)
+
+2. Start docker nginx image
+   - docker run -p 80:80 nginx
+   - docker run -d -p 80:80 nginx (To run on background use -d tag)
+
+![](./Images/27.png)
+
+3. If we open the IP of our virtual machine we can see Nginx is running,
+
+![](./Images/28.png)
 
 ---
