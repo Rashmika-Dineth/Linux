@@ -302,4 +302,6 @@ Study: Read about LXD and its features on LinuxContainers website
 Setup: Install LXD on your system, enable LXD
 Basic commands: Experiment with basic LXD commands to create, manage, and interact with containers. You can find the starting point in the source
 
-1. Install LXD
+**This part was discussed in the top of the documentation**
+
+---
