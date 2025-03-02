@@ -1,4 +1,6 @@
-# Programming With C
+# Assignment 1 (6p)
+
+---
 
 ## 1. Setting Up C Programming Environment on Linux
 
@@ -57,3 +59,42 @@ Since we already have installed gcc compiler we do not need to install the compi
 7. Compile and run the program
 
 ![](./Images/7.png)
+
+---
+
+## 2. Part 2 - Setting up node JS server on Linux VM
+
+1. Make the directory myserver and go inside the folder, get the latest update of apt updates,
+
+![](./Images/Part%202/1.png)
+
+2. Install the Node JS and check the version of node and npm, then initiate the node js program,
+
+![](./Images/Part%202/2.png)
+
+3. Install the node package express and update the index.js package (After this you can run index.js)
+
+![](./Images/Part%202/3.png)
+
+4. Following is the basic code of node js server
+
+![](./Images/Part%202/6.png)
+
+5. Update the firewall settings so that the port can be viewed from outside connections,
+
+![](./Images/Part%202/4.png)
+
+6. Run the server and check its working with the public ip address and your port id ( 'http://74.234.40.225:3000/' )
+
+![](./Images/Part%202/5.png)
+
+7. If you get the following msg then the server is running with no issues,
+
+![](./Images/Part%202/7.png)
+
+8. Update the index.js so the **/user** navigation can display user information by **process.env.USER**
+   ![](./Images/Part%202/8.png)
+
+9. Check the result with **/user** navigation,
+
+![](./Images/Part%202/9.png)
