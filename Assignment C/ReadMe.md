@@ -98,3 +98,39 @@ Since we already have installed gcc compiler we do not need to install the compi
 9. Check the result with **/user** navigation,
 
 ![](./Images/Part%202/9.png)
+
+---
+
+## 3. Part 3 - Install Python 3, pip, and bpytop on a Linux VM
+
+1. Get the updated apt list and install python
+
+![](./Images/Part%203/1.png)
+
+2. Check the python and pip version. (To make sure setup is success)
+
+![](./Images/Part%203/2.png)
+
+3. Install bpytop as a user, (not root user)
+   - pip3 install bpytop --user
+
+![](./Images/Part%203/3.png)
+
+Humm!! .. Got an error...
+
+4. Redo using VM inside Linux, (Install the Virtual Environment Package:)
+   - sudo apt install python3-venv
+
+![](./Images/Part%203/4.png)
+
+5. Create and activate Virtual Environment:
+
+![](./Images/Part%203/5.png)
+
+6. Now install bpytop inside the VM and run it,
+
+![](./Images/Part%203/6.png)
+
+7. Take a screenshot of the bpytop
+
+![](./Images/Part%203/8.png)
